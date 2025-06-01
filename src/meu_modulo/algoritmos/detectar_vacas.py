@@ -3,12 +3,17 @@ import cv2
 import os
 
 # Carrega o modelo YOLOv5 pré-treinado
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+model = torch.hub.load(
+    'ultralytics/yolov5',
+    'yolov5s',  
+    pretrained=True,
+    trust_repo=True
+)
 
 # Define a classe 'cow' no COCO (ID 20)
 TARGET_CLASS = 'cow'
 
-video_path = "src/meu_modulo/vacas.mp4"
+video_path = "./algoritmos/vacas.mp4"
 
 def detectar_vacas(video_path):
     cap = cv2.VideoCapture(video_path)
@@ -36,3 +41,6 @@ def detectar_vacas(video_path):
 
     cap.release()
     cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    detectar_vacas
