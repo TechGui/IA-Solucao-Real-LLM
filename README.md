@@ -1,4 +1,4 @@
-# 🤖 IA-Solucao-Real-LLM — "Cubô"
+# 🤖 IA-Solucao-Real-LLM 
 
 Um projeto de assistente pessoal controlado por voz que converte fala em texto, interpreta comandos usando um modelo de linguagem (LLM) da HuggingFace e responde com síntese de voz em português, este protótipo demonstra a integração de tecnologias modernas para criar uma interface conversacional completa com reconhecimento e síntese de voz.
 
