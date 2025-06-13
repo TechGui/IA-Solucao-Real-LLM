@@ -22,7 +22,6 @@ system_prompt = (
 )
 
 def enviar_mensagem_hf(mensagem):
-    # Prompt específico para Zephyr
     prompt_completo = (
         "<|system|>\n"
         f"{system_prompt}\n\n"
@@ -46,8 +45,6 @@ def enviar_mensagem_hf(mensagem):
     
     if response.status_code == 200:
         generated = response.json()[0]["generated_text"]
-        # Para Zephyr, geralmente ele responde a partir da tag <|assistant|>
-        # Então você pode tentar só pegar tudo depois de "<|assistant|>\n"
         if "<|assistant|>\n" in generated:
             resposta = generated.split("<|assistant|>\n")[-1].strip()
         else:
