@@ -74,7 +74,7 @@ python main.py
 **João Vitor Dolinski da Silva**  
 Desenvolvedor, estudante de Análise e Desenvolvimento de Sistemas
 
-**Guilherme da Rosa Silva**
+**Guilherme da Rosa Silva**  
 Desenvolvedor, estudante de Análise e Desenvolvimento de Sistemas
 
 ---
