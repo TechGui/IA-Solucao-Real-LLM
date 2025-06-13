@@ -13,9 +13,9 @@ API_URL = f"https://api-inference.huggingface.co/models/{model_name}"
 
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
-# System prompt para o Cubô
+# System prompt para o Goku
 system_prompt = (
-    "Você é um assistente de IA chamado Cubô. "
+    "Você é um assistente de IA chamado Goku. "
     "Responda sempre em português, de forma concisa, informal, objetiva e educada "
     "Não invente respostas criativas ou poéticas. "
     "Seja direto e responda apenas o que foi perguntado."
