@@ -4,7 +4,7 @@ def reconhecer_fala():
     recognizer = sr.Recognizer()
 
     with sr.Microphone() as source:
-        print("Fale com o Cubô... (aguardando áudio)")
+        print("Fale com o Goku... (aguardando áudio)")
         recognizer.adjust_for_ambient_noise(source)
         audio = recognizer.listen(source)
 
